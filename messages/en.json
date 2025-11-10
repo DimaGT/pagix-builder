@@ -1,5 +1,57 @@
-// messages/en.json
 {
+  "nav": {
+    "brand": "Pagix",
+    "signIn": "Sign In",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "badge": "AI-Powered Website Builder",
+    "title": "Build Websites Without Code",
+    "subtitle": "Create stunning, responsive websites with our drag-and-drop editor. No coding required. Launch in minutes.",
+    "cta": {
+      "primary": "Start Building Free",
+      "secondary": "Watch Demo"
+    }
+  },
+  "features": {
+    "title": "Powerful Features",
+    "subtitle": "Everything you need to create professional websites",
+    "items": [
+      {
+        "title": "Drag & Drop Editor",
+        "description": "Intuitive interface for building pages without touching code"
+      },
+      {
+        "title": "Design System",
+        "description": "Pre-built components and templates to get started instantly"
+      },
+      {
+        "title": "Code Export",
+        "description": "Export clean, production-ready HTML, CSS, and JavaScript"
+      },
+      {
+        "title": "AI Generation",
+        "description": "Let AI help generate content and design suggestions"
+      },
+      {
+        "title": "Collaboration",
+        "description": "Work with your team in real-time on projects"
+      },
+      {
+        "title": "Responsive Design",
+        "description": "Automatically optimized for all devices and screen sizes"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Build?",
+    "subtitle": "Join thousands of creators building amazing websites with Pagix",
+    "button": "Get Started Free"
+  },
+  "footer": {
+    "brand": "Pagix",
+    "copyright": "© 2025 Pagix. All rights reserved."
+  },
   "dashboard": {
     "welcome": "Welcome back!",
     "subtitle": "Create a new page or continue editing your existing projects",
