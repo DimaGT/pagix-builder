@@ -1,0 +1,22 @@
+// messages/he.json
+{
+  "dashboard": {
+    "welcome": "ברוכים השבים!",
+    "subtitle": "צור עמוד חדש או המשך לערוך את הפרויקטים הקיימים שלך",
+    "createBlank": "צור עמוד ריק",
+    "chooseTemplate": "בחר תבנית",
+    "myPages": "העמודים שלי",
+    "searchPages": "חפש עמודים...",
+    "startFromTemplate": "התחל מתבנית",
+    "templateSubtitle": "בחר מתוך אוסף התבניות המעוצבות המקצועיות שלנו",
+    "updated": "עודכן {time}",
+    "status": {
+      "published": "פורסם",
+      "draft": "טיוטה"
+    },
+    "timeAgo": {
+      "daysAgo": "לפני {count} ימים",
+      "weekAgo": "לפני שבוע"
+    }
+  }
+}

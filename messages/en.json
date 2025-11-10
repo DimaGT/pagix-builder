@@ -1,0 +1,22 @@
+// messages/en.json
+{
+  "dashboard": {
+    "welcome": "Welcome back!",
+    "subtitle": "Create a new page or continue editing your existing projects",
+    "createBlank": "Create Blank Page",
+    "chooseTemplate": "Choose Template",
+    "myPages": "My Pages",
+    "searchPages": "Search pages...",
+    "startFromTemplate": "Start from Template",
+    "templateSubtitle": "Choose from our collection of professionally designed templates",
+    "updated": "Updated {time}",
+    "status": {
+      "published": "Published",
+      "draft": "Draft"
+    },
+    "timeAgo": {
+      "daysAgo": "{count} days ago",
+      "weekAgo": "1 week ago"
+    }
+  }
+}
