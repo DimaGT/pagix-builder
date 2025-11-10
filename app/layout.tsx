@@ -7,7 +7,7 @@ type Props = {
 export default async function RootLayout({children}: Props) {
   return (
     <html>
-      <body >
+      <body dir='rtl' >
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>

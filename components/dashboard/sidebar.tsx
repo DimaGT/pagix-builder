@@ -5,14 +5,16 @@ import { usePathname } from "next/navigation"
 import { LayoutDashboard, Settings, LogOut, Plus } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { logout } from "@/app/actions/actions"
+import { useTranslations } from "next-intl"
 
 export default function DashboardSidebar() {
   const pathname = usePathname()
+  const t = useTranslations("sidebar")
 
   const navItems = [
-    { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
-    { href: "/builder", label: "Create Page", icon: Plus },
-    { href: "/settings", label: "Settings", icon: Settings },
+    { href: "/dashboard", label: t("dashboard"), icon: LayoutDashboard },
+    { href: "/builder", label: t("createPage"), icon: Plus },
+    { href: "/settings", label: t("settings"), icon: Settings },
   ]
 
   return (
@@ -23,7 +25,7 @@ export default function DashboardSidebar() {
           <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
             <span className="text-primary-foreground font-bold">P</span>
           </div>
-          <span className="text-xl font-bold">Pagix</span>
+          <span className="text-xl font-bold">{t("logo")}</span>
         </Link>
       </div>
 
@@ -47,12 +49,16 @@ export default function DashboardSidebar() {
       {/* User Profile & Logout */}
       <div className="p-4 border-t border-border space-y-3">
         <div className="px-3 py-2">
-          <p className="text-sm font-medium">John Doe</p>
-          <p className="text-xs text-muted-foreground">john@example.com</p>
+          <p className="text-sm font-medium">joe clark</p>
+          <p className="text-xs text-muted-foreground">user@email.com</p>
         </div>
-        <Button onClick={logout} variant="ghost" className="w-full justify-start gap-3 text-destructive hover:text-destructive">
+        <Button
+          onClick={logout}
+          variant="ghost"
+          className="w-full justify-start gap-3 text-destructive hover:text-destructive"
+        >
           <LogOut className="w-5 h-5" />
-          Logout
+          {t("logout")}
         </Button>
       </div>
     </aside>

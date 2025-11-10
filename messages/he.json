@@ -53,22 +53,83 @@
     "copyright": "© 2025 Pagix. כל הזכויות שמורות."
   },
   "dashboard": {
-    "welcome": "ברוכים השבים!",
-    "subtitle": "צור עמוד חדש או המשך לערוך את הפרויקטים הקיימים שלך",
-    "createBlank": "צור עמוד ריק",
-    "chooseTemplate": "בחר תבנית",
-    "myPages": "העמודים שלי",
-    "searchPages": "חפש עמודים...",
-    "startFromTemplate": "התחל מתבנית",
-    "templateSubtitle": "בחר מתוך אוסף התבניות המעוצבות המקצועיות שלנו",
-    "updated": "עודכן {time}",
-    "status": {
-      "published": "פורסם",
-      "draft": "טיוטה"
+    "welcome": {
+      "title": "ברוך שובך!",
+      "subtitle": "צור דף חדש או המשך לערוך את הפרויקטים הקיימים שלך"
     },
-    "timeAgo": {
-      "daysAgo": "לפני {count} ימים",
-      "weekAgo": "לפני שבוע"
+    "quickActions": {
+      "createBlank": "צור דף ריק",
+      "chooseTemplate": "בחר תבנית"
+    },
+    "myPages": {
+      "title": "הדפים שלי",
+      "searchPlaceholder": "חפש דפים...",
+      "statuses": {
+        "published": "פורסם",
+        "draft": "טיוטה"
+      }
     }
+   
+  },
+   "templates": {
+    "portfolio": "פורטפוליו",
+    "ecommerce": "מסחר אלקטרוני",
+    "blog": "בלוג",
+    "saas": "תוכנה כשירות (SaaS)",
+    "agency": "סוכנות",
+    "restaurant": "מסעדה",
+    "useTemplate": "השתמש בתבנית"
+  },
+  "sidebar": {
+    "logo": "פאג'יקס",
+    "dashboard": "לוח בקרה",
+    "createPage": "צור עמוד",
+    "settings": "הגדרות",
+    "logout": "התנתק"
+  },
+  "signup": {
+    "backHome": "חזרה לדף הבית",
+    "logo": "פאג'יקס",
+    "title": "צור חשבון",
+    "subtitle": "התחל לבנות אתרי אינטרנט מדהימים כבר היום",
+    "fullName": "שם מלא",
+    "email": "אימייל",
+    "phone": "טלפון",
+    "password": "סיסמה",
+    "confirmPassword": "אשר סיסמה",
+    "fullNamePlaceholder": "יוסי כהן",
+    "emailPlaceholder": "you@example.com",
+    "phonePlaceholder": "12345678",
+    "passwordPlaceholder": "••••••••",
+    "confirmPasswordPlaceholder": "••••••••",
+    "createAccount": "צור חשבון",
+    "creatingAccount": "יוצר חשבון...",
+    "benefitsTitle": "מה תקבל:",
+    "benefit1": "פרויקטים ללא הגבלה",
+    "benefit2": "עיצוב מבוסס בינה מלאכותית",
+    "benefit3": "ייצוא קוד",
+    "alreadyHaveAccount": "כבר יש לך חשבון?",
+    "signIn": "התחבר",
+    "emailConfirm": "אנא בדוק את האימייל שלך כדי לאשר את החשבון.",
+    "error": "אירעה שגיאה בלתי צפויה. נסה שוב."
+  },
+   "login": {
+    "back": "חזרה לדף הבית",
+    "title": "ברוך שובך",
+    "subtitle": "היכנס לחשבון שלך כדי להמשיך לבנות",
+    "email": "אימייל",
+    "password": "סיסמה",
+    "remember": "זכור אותי",
+    "forgot": "שכחת סיסמה?",
+    "signin": "התחברות",
+    "signinLoading": "מתחבר...",
+    "divider": "או המשך עם",
+    "google": "המשך עם Google",
+    "googleLoading": "מתחבר...",
+    "noAccount": "אין לך חשבון?",
+    "signup": "הרשמה",
+    "invalid": "אימייל או סיסמה שגויים.",
+    "success": "התחברת בהצלחה. מעביר...",
+    "error": "משהו השתבש. נסה שוב מאוחר יותר!"
   }
 }

@@ -53,22 +53,86 @@
     "copyright": "© 2025 Pagix. All rights reserved."
   },
   "dashboard": {
-    "welcome": "Welcome back!",
-    "subtitle": "Create a new page or continue editing your existing projects",
-    "createBlank": "Create Blank Page",
-    "chooseTemplate": "Choose Template",
-    "myPages": "My Pages",
-    "searchPages": "Search pages...",
-    "startFromTemplate": "Start from Template",
-    "templateSubtitle": "Choose from our collection of professionally designed templates",
-    "updated": "Updated {time}",
-    "status": {
-      "published": "Published",
-      "draft": "Draft"
+    "welcome": {
+      "title": "Welcome back!",
+      "subtitle": "Create a new page or continue editing your existing projects"
     },
-    "timeAgo": {
-      "daysAgo": "{count} days ago",
-      "weekAgo": "1 week ago"
+    "quickActions": {
+      "createBlank": "Create Blank Page",
+      "chooseTemplate": "Choose Template"
+    },
+    "myPages": {
+      "title": "My Pages",
+      "searchPlaceholder": "Search pages...",
+      "statuses": {
+        "published": "Published",
+        "draft": "Draft"
+      }
+    },
+    "templates": {
+      "title": "Start from Template",
+      "subtitle": "Choose from our collection of professionally designed templates"
     }
+  },
+ "templates": {
+    "portfolio": "Portfolio",
+    "ecommerce": "E-Commerce",
+    "blog": "Blog",
+    "saas": "SaaS",
+    "agency": "Agency",
+    "restaurant": "Restaurant",
+    "useTemplate": "Use Template"
+  },
+   "sidebar": {
+    "logo": "Pagix",
+    "dashboard": "Dashboard",
+    "createPage": "Create Page",
+    "settings": "Settings",
+    "logout": "Logout"
+ },
+ "signup": {
+    "backHome": "Back to home",
+    "logo": "Pagix",
+    "title": "Create Account",
+    "subtitle": "Start building amazing websites today",
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "fullNamePlaceholder": "John Doe",
+    "emailPlaceholder": "you@example.com",
+    "phonePlaceholder": "12345678",
+    "passwordPlaceholder": "••••••••",
+    "confirmPasswordPlaceholder": "••••••••",
+    "createAccount": "Create Account",
+    "creatingAccount": "Creating Account...",
+    "benefitsTitle": "What you get:",
+    "benefit1": "Unlimited projects",
+    "benefit2": "AI-powered design",
+    "benefit3": "Code export",
+    "alreadyHaveAccount": "Already have an account?",
+    "signIn": "Sign in",
+    "emailConfirm": "Please check your email to confirm your account.",
+    "error": "An unexpected error occurred. Please try again."
+  },
+   "login": {
+    "back": "Back to home",
+    "title": "Welcome Back",
+    "subtitle": "Sign in to your account to continue building",
+    "email": "Email",
+    "password": "Password",
+    "remember": "Remember me",
+    "forgot": "Forgot password?",
+    "signin": "Sign In",
+    "signinLoading": "Signing in...",
+    "divider": "Or continue with",
+    "google": "Continue with Google",
+    "googleLoading": "Connecting...",
+    "noAccount": "Don't have an account?",
+    "signup": "Sign up",
+    "invalid": "Invalid email or password. Please try again.",
+    "success": "Login successful. Redirecting...",
+    "error": "Something went wrong. Try later!"
   }
 }
