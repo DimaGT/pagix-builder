@@ -27,14 +27,16 @@ export async function updateSession(request: NextRequest) {
     }
   )
 
-  // IMPORTANT: Skip auth check for API routes
+  //Skip auth check for API routes
   if (request.nextUrl.pathname.startsWith('/api')) {
     return supabaseResponse
   }
 
+
   const {
     data: { user },
   } = await supabase.auth.getUser()
+  console.log('get user',user)
 
   // If user is logged in and tries to access login/signup, redirect to dashboard
   if (user && (request.nextUrl.pathname.startsWith('/login') || request.nextUrl.pathname.startsWith('/signup'))) {
@@ -48,6 +50,8 @@ export async function updateSession(request: NextRequest) {
     !user &&
     !request.nextUrl.pathname.startsWith('/login') &&
     !request.nextUrl.pathname.startsWith('/signup') &&
+    // !request.nextUrl.pathname.startsWith('/api') &&
+
     !request.nextUrl.pathname.startsWith('/verify-phone') &&
     !request.nextUrl.pathname.startsWith('/email-confirmation') &&
     !request.nextUrl.pathname.startsWith('/error')
