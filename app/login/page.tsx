@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 
 import Link from "next/link"
@@ -27,7 +28,6 @@ const router=useRouter()
     try {
       const result = await login(formData)
 
-      console.log("login result",result)
 
       if (!result.success) {
         toast.error(result.error)

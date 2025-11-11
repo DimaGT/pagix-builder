@@ -25,7 +25,7 @@ export default function SignupPage() {
       if (!result.success) {
         toast(result.error)
       } else {
-        toast(t("emailConfirm"))
+        toast('Welcome !')
         setTimeout(() => router.push(result.redirectTo), 1000)
       }
     } catch {

@@ -228,7 +228,7 @@ export async function resendVerificationCode(phone: string) {
     }
 
     // Send SMS
-    const smsResponse = await fetch(`localhost:3000/api/send-verification-sms/api/send-verification-sms`, {
+    const smsResponse = await fetch(`${process.env.NEXT_PUBLIC_APP_URL}/api/send-verification-sms/api/send-verification-sms`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
