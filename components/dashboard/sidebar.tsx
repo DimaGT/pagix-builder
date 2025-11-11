@@ -28,14 +28,12 @@ export default function DashboardSidebar() {
   useEffect(() => {
   const fetchUser = async () => {
     const user = await getUser();
-    // Do something with user (e.g., set state)
     if(user){
       setUserEmail(user.user.email)
       setUserName(user.user.user_metadata.name)
 
     }
 
-    console.log("my user",user)
   };
   
   fetchUser();

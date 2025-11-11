@@ -36,7 +36,6 @@ export async function updateSession(request: NextRequest) {
   const {
     data: { user },
   } = await supabase.auth.getUser()
-  console.log('get user',user)
 
   // If user is logged in and tries to access login/signup, redirect to dashboard
   if (user && (request.nextUrl.pathname.startsWith('/login') || request.nextUrl.pathname.startsWith('/signup'))) {
@@ -50,10 +49,11 @@ export async function updateSession(request: NextRequest) {
     !user &&
     !request.nextUrl.pathname.startsWith('/login') &&
     !request.nextUrl.pathname.startsWith('/signup') &&
-    // !request.nextUrl.pathname.startsWith('/api') &&
+    !request.nextUrl.pathname.startsWith('/') &&
 
     !request.nextUrl.pathname.startsWith('/verify-phone') &&
     !request.nextUrl.pathname.startsWith('/email-confirmation') &&
+    !request.nextUrl.pathname.startsWith('/update-password') &&
     !request.nextUrl.pathname.startsWith('/error')
   ) {
     const url = request.nextUrl.clone()

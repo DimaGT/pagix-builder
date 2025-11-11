@@ -8,6 +8,7 @@ import { useTranslations, useLocale } from "next-intl"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { login, loginWithGoogle } from "../actions/actions"
+import { useRouter } from "next/navigation"
 
 export default function LoginPage() {
   const t = useTranslations("login")
@@ -16,7 +17,7 @@ export default function LoginPage() {
 
   const [loading, setLoading] = useState(false)
   const [googleLoading, setGoogleLoading] = useState(false)
-
+const router=useRouter()
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setLoading(true)
@@ -31,7 +32,8 @@ export default function LoginPage() {
       if (!result.success) {
         toast.error(result.error)
       } else {
-        toast.success("hllo")
+        toast.success("welcome back !")
+        router.push('/dashboard')
       }
     } catch (err: any) {
       toast.error(t("error"))
@@ -88,7 +90,7 @@ export default function LoginPage() {
               <input type="checkbox" className="rounded" />
               {t("remember")}
             </label>
-            <Link href="#" className="text-primary hover:underline">
+            <Link href="update-password" className="text-primary hover:underline">
               {t("forgot")}
             </Link>
           </div>
