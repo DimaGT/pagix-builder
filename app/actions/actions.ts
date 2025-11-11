@@ -4,6 +4,8 @@ import { revalidatePath } from 'next/cache'
 import { redirect } from 'next/navigation'
 
 import { createClient } from '@/utils/supabase/server'
+import { error } from 'console'
+import { success } from 'zod'
 
 
 export async function login(formData: FormData) {
@@ -14,6 +16,12 @@ export async function login(formData: FormData) {
     password: formData.get('password') as string,
   }
 
+    if (data.password.length < 8) {
+    return { 
+      success: false, 
+      error: "Password should be at least 8 character"
+    }
+  }
   const { error } = await supabase.auth.signInWithPassword(data)
 
 
@@ -37,6 +45,23 @@ export async function login(formData: FormData) {
     success: true, 
     redirectTo: '/dashboard' 
   }
+}
+
+
+export async function getUser() {
+  const supabase=await createClient();
+
+    const {
+    data: { user },
+  } = await supabase.auth.getUser()
+
+  console.log("user",user)
+
+  if(!user){
+    return {succes:false ,user:null}
+  }
+
+  return {success:true ,user }
 }
 
 // Generate a random 6-digit code

@@ -26,10 +26,12 @@ export default function LoginPage() {
     try {
       const result = await login(formData)
 
+      console.log("login result",result)
+
       if (!result.success) {
-        toast.error(t("invalid"))
+        toast.error(result.error)
       } else {
-        toast.success(t("success"))
+        toast.success("hllo")
       }
     } catch (err: any) {
       toast.error(t("error"))

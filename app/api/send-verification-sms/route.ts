@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
         { status: 500 }
       )
     }
-
+  
 
     const { phone, code } = await request.json()
     console.log(' Request body:', { phone, code })
