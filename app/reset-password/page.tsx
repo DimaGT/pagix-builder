@@ -57,7 +57,6 @@ export default function ResetPasswordPage() {
 
     setIsLoading(true)
 
-    // Simulate API call
     await updateUserPassword(password)
     setTimeout(() => {
       setIsLoading(false)
@@ -111,7 +110,7 @@ export default function ResetPasswordPage() {
           <h1 className="text-3xl font-bold text-center text-foreground mb-2">Set new password</h1>
 
           <p className="text-center text-muted-foreground">
-            Enter a new password for your account. Make sure it's strong and unique.
+            Enter a new password for your account. Make sure it&apos;s strong and unique.
           </p>
         </div>
 

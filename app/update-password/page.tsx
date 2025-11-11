@@ -34,7 +34,6 @@ export default function ForgotPasswordPage() {
 
     setIsLoading(true)
 
-    // Simulate API call
     await sendPasswordVerificationEmail(email)
     setTimeout(() => {
       setIsLoading(false)
@@ -55,12 +54,12 @@ export default function ForgotPasswordPage() {
           <h1 className="text-2xl font-bold text-center text-foreground mb-2">Check your email</h1>
 
           <p className="text-center text-muted-foreground mb-6">
-            We've sent a password reset link to <strong>{email}</strong>. Click the link in the email to reset your
+            We&apos;ve sent a password reset link to <strong>{email}</strong>. Click the link in the email to reset your
             password.
           </p>
 
           <p className="text-sm text-center text-muted-foreground mb-6">
-            Didn't receive an email? Check your spam folder or try again with a different email.
+            Didn&apos;t receive an email? Check your spam folder or try again with a different email.
           </p>
 
           <Button onClick={() => setIsSubmitted(false)} variant="outline" className="w-full mb-3">
@@ -100,7 +99,7 @@ export default function ForgotPasswordPage() {
           <h1 className="text-3xl font-bold text-center text-foreground mb-2">Forgot password?</h1>
 
           <p className="text-center text-muted-foreground">
-            No problem. Enter your email and we'll send you a link to reset your password.
+            No problem. Enter your email and we&apos;ll send you a link to reset your password.
           </p>
         </div>
 
